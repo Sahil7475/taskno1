@@ -1,0 +1,25 @@
+.container{
+    margin-top: 50px;
+   /*  padding-left: 15%; */
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: .3s;
+}
+.container-fluid{
+    padding-left: 45%;
+}
+
+/* .taskname{
+  
+    width: 50%;
+}
+
+#list{
+    width: 50%;
+}
+.button{
+   
+} */
