@@ -79,7 +79,7 @@ let addbtn = document.getElementById("add_btn");
                 let currentchaptername = currelement.previousElementSibling.textContent
                 let currInput = document.createElement("input");
                 currInput.type = "text";
-                currInput.placeholder ="Chapter name";
+                currInput.placeholder ="task name";
                 currInput.className ="form-control";
                 currInput.value=currentchaptername
                 
