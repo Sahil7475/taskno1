@@ -1,8 +1,18 @@
 .container{
     margin-top: 50px;
    /*  padding-left: 15%; */
+   background-color: #21325E;
+    line-height: 1.5rem;
 }
-
+.form-control{
+    margin-top: 10px;
+}
+#add_btn{
+    margin-top: 10px;
+}
+.list-group-item{
+    margin-bottom: 10px;
+}
 .completed{
     text-decoration: line-through;
     opacity: 0.7;
@@ -11,15 +21,13 @@
 .container-fluid{
     padding-left: 45%;
 }
-
-/* .taskname{
-  
-    width: 50%;
+.complete{
+  margin-top: 15px;
+    cursor: pointer;
 }
-
-#list{
-    width: 50%;
+.emptymsg{
+    color: white;
 }
-.button{
-   
-} */
+.task{
+    font-size: 25px;
+}

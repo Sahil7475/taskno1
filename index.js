@@ -2,7 +2,7 @@ let addbtn = document.getElementById("add_btn");
         
         addbtn.addEventListener("click",addchapters);
         let ullist = document.getElementById('list');
-
+      
         let form = document.getElementsByClassName('form-control');
 
            
@@ -18,13 +18,16 @@ let addbtn = document.getElementById("add_btn");
                 alert("Please mention the task")
             }
             else{
+          
+            form.innerHTML=` <input type="text"  class="form-control" value="" placeholder="Task name" aria-label="Recipient's username" aria-describedby="button-addon2">`
             let newLi = document.createElement("li");
+           
             newLi.className="list-group-item d-flex justify-content-between";
             newLi.innerHTML=`
-            <h3 class="flex-grow-1" >${currentchapter}</h3>
+            <h3 class="flex-grow-1 task" >${currentchapter}</h3>
             <button class="btn btn-warning mx-2" onclick="editChapters(this)">Edit</button>
             <button class="btn btn-danger mx-3" onclick="removechapters(this)">Remove</button>
-            <input type="button" class="complete" value="✓" onclick="taskdone(this)">
+            <i class="fa-solid fa-check complete" onclick="taskdone(this)"></i>
          </li>`;
 
             
@@ -39,12 +42,12 @@ let addbtn = document.getElementById("add_btn");
             function removechapters(currelement){
                     currelement.parentElement.remove();
                     let ullist = document.getElementById('list');
-                    
+                   
                     if(ullist.children.length <=0){
                         
                     let newmessage = document.createElement("h3");
                     newmessage.classList.add('emptymsg')
-                    newmessage.textContent ="Nothing is here , Please add a chapter!!";
+                    newmessage.textContent ="Nothing is here , Please add a task!!";
                     ullist.appendChild(newmessage);
 
                     }
